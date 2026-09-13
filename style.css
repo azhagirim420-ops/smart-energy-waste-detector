@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f8f6;
+    color: #14251c;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 25px;
+    color: #14251c;
+    font-weight: bold;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+    background: linear-gradient(135deg, #dfffe9, #ffffff);
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.1;
+}
+
+.hero h1 span {
+    color: #0a9f55;
+}
+
+.hero p {
+    max-width: 600px;
+    font-size: 19px;
+    margin: 25px 0;
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 25px;
+    background: #0a9f55;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* DETECTOR */
+
+.detector {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.detector h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.form-card {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.form-card label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.form-card input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+.form-card button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 8px;
+    background: #0a9f55;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-card button:hover {
+    background: #078346;
+}
+
+/* RESULT */
+
+.result {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+.result-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.result-grid div {
+    padding: 20px;
+    background: #eefaf3;
+    border-radius: 10px;
+}
+
+.result-grid h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.result-grid p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.suggestion {
+    margin-top: 25px;
+    padding: 20px;
+    background: #fff8dc;
+    border-radius: 10px;
+    text-align: left;
+}
+
+/* TIPS */
+
+.tips {
+    padding: 70px 8%;
+    background: #eafff1;
+    text-align: center;
+}
+
+.tips-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.tip {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.tip h3 {
+    margin: 15px 0;
+}
+
+.tip p {
+    line-height: 1.5;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 30px;
+    background: #14251c;
+    color: white;
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px 5%;
+    }
+
+    nav a {
+        margin-left: 10px;
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 50px 7%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .result-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tips-container {
+        grid-template-columns: 1fr;
+    }
+  }
